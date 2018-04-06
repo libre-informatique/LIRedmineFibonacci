@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "LIRedmineFibonacci",
+    "version": "1.0",
+
+    "description": "Add a dropdown for effort and customer value fields",
+
+    "icons": {
+        "92": "icons/LIRedmineFibonacci.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://suivi.libre-informatique.fr/*"],
+            "js": ["lib/jquery-3.3.1.min.js", "LIRedmineFibonacci.js"]
+        }
+    ]
+}
